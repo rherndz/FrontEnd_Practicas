@@ -31,16 +31,16 @@ body{
 .card__wrapper{
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    
     justify-content: center;
     min-width:350px;
     padding: 40px 30px;
-    background-color:hsla(88, 91%, 53%, 0.706);
+    
 }
 .item_card{
-    max-width: 320px;
+    max-width: 310px;
     min-width: 250px;
-    height: 425px;
+    height: auto;
     padding:20px;
     
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -76,7 +76,7 @@ body{
 }
 .item_card_body span{
     color: var(--color-font-title);
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-family: 'Big Shoulders Display';
     font-weight: 700;
     line-height: 2em;
@@ -84,7 +84,7 @@ body{
 .item_card_body p{
     padding: 10px 0;
     color: var(--color-font-text);
-    font-size: 12px;
+    font-size: 0.9em;
     font-family: 'Lexend Deca', sans-serif;
     line-height: 1.5em;
     
@@ -92,31 +92,35 @@ body{
 
 
 /*Section Button*/
-.card__button{
+.card_button_content{
     display: flex;
+    justify-content: left;
+    margin-top: 25px;
+}
+
+.card__button{
     padding: 10px 22px;
     border-radius: 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: hsl(0, 0%, 100%);
+    
 }
 .card__button:hover{
-    background-color: hsl(0, 0%, 95%);
+    background-color: var(--color-background);
 }
 .card__button__link{
-    color: #16A085;
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'Lexend Deca', sans-serif;
-    font-weight: bold;
     text-decoration: none;
 }
 
-.btn-1{
-    color: var(--color-principal);
+.btn-bright-orange{
+    color: var(--color-bright-orange);
 }
-.btn-2{
-    color: var(--color-secundario);
+.btn-dark-cyan{
+    color: var(--color-dark-cyan);
 }
-.btn-3{
-    color: var(--color-terciario);
+.btn-very-dark-cyan{
+    color: var(--color-very-dark-cyan);
 }
 
 
