@@ -7,7 +7,7 @@
     --color-very-dark-cyan:hsl(179, 100%, 13%);
     --color-font-title: hsl(0, 0%, 100%);
     --color-font-text:hsla(0, 0%, 100%, 0.75);
-    --color-background: hsl(0, 0%, 95%);
+    --color-background: hsl(0, 4%, 90%);
 }
 
 *{
@@ -84,12 +84,11 @@ body{
 .item_card_body p{
     padding: 10px 0;
     color: var(--color-font-text);
-    font-size: 0.9em;
+    font-size: 0.7em;
     font-family: 'Lexend Deca', sans-serif;
     line-height: 1.5em;
     
 }
-
 
 /*Section Button*/
 .card_button_content{
@@ -102,7 +101,6 @@ body{
     padding: 10px 22px;
     border-radius: 50px;
     background-color: hsl(0, 0%, 100%);
-    
 }
 .card__button:hover{
     background-color: var(--color-background);
@@ -113,15 +111,39 @@ body{
     text-decoration: none;
 }
 
-.btn-bright-orange{
+.link-bright-orange{
     color: var(--color-bright-orange);
 }
-.btn-dark-cyan{
+.link-dark-cyan{
     color: var(--color-dark-cyan);
 }
-.btn-very-dark-cyan{
+.link-very-dark-cyan{
     color: var(--color-very-dark-cyan);
 }
 
+/* Section Responsive Desing */
+@media (max-width:768px) {
+    .item_orange{
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .item_darkcyan{
+        border-radius: 0 10px 10px 0;
+    }
+    
+    .item_verydarkcyan{
+        border-radius: 0 0 10px 10px;
+    }
+}
 
+@media (max-width:425px) {
+    .item_orange{
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .item_darkcyan{
+        border-radius: 0 0 0 0;
+    }
+    
+}
 
