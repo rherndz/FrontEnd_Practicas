@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Poppins:wght@600&display=swap');
 
 :root{
+    --color-font:hsl(0, 0%, 100%);
     --color-principal:hsl(257, 40%, 49%);
     --color-secundario: hsl(300, 69%, 71%);
+    
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: arial;
-    color: white;
 }
 
 .headerboard_container{
@@ -33,7 +32,6 @@
     width: 60%;
 }
 
-/*Section Images - Info*/
 .headerboard_content{
     display: flex;
     flex-wrap: wrap;
@@ -43,33 +41,38 @@
     height: auto;
     padding: 10px 0 ;
 }
+
+/*Section Panel Left */
 .panel_left{
     width: auto;
     max-width: 600px;
-}
-figure{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .panel_img{
     width: 95%;
 }
 
+
+/*Section Panel - Rigth*/
 .panel_rigth{
     width: 40%;
     min-width: 450px;
     padding: 15px 5px;
 }
 .panel_content h3{
-    font-size: 27px;
+    color: var(--color-font);
+    font-size: 1.6em;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
 .panel_content p{
-    font-size: 15px;
+    color: var(--color-font);
+    font-size: 0.8em;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     text-align: left;
@@ -88,15 +91,13 @@ figure{
     text-decoration: none;
     color: var(--color-principal);
     background-color: #ffff;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .button_register:hover{
     background-color: var(--color-secundario);
     color: #ffff;
 }
-.headerboard_footer ul{
-    display: inline-flex;
-    justify-content: space-between;
-}
+
 
 /*section Social Media*/
 .headerboard_footer{
@@ -105,11 +106,16 @@ figure{
     justify-content: right;
     padding: 6px 50px;
 }
+.headerboard_footer ul{
+    display: inline-flex;
+    justify-content: space-between;
+}
 .social_media li{
     margin: 8px;
-    list-style: none;
+    list-style: none; 
 }
 ion-icon{
+    color: #ffff;
     padding: 6px;
     font-size: 20px;
     border-radius: 20px;
@@ -122,7 +128,6 @@ ion-icon:hover{
 
 
 /* Section responsive desing */
-
 @media (max-width:768px){
 
     .headerboard_header{
@@ -181,7 +186,7 @@ ion-icon:hover{
 @media (min-width:768px){
 
     .headerboard_header{
-        background-color: rgba(15, 211, 233, 0); 
+        background-color: rgba(13, 213, 235, 0.932); 
     }
 
     /*Section Images - Info*/
@@ -203,7 +208,7 @@ ion-icon:hover{
 
     /*section Social Media*/
     .headerboard_footer{
-        justify-content: center;
+        justify-content: right;
     }
     
     ion-icon{
@@ -218,9 +223,8 @@ ion-icon:hover{
 }
 
 @media (min-width:1440px){
-
     .headerboard_header{
-        background-color: rgba(15, 233, 139, 0); 
+        background-color: rgba(233, 226, 15, 0.907); 
     }
 
     .header_logo{
