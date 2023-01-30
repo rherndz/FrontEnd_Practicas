@@ -1,0 +1,132 @@
+/* Section responsive desing */
+@media (min-width:1440px){
+     .headerboard_header{
+        background-color: rgba(15, 226, 233, 0.847); 
+    }
+
+    .header_logo{
+        width: 75%;
+    }
+
+    /*Section Images - Info*/
+    .headerboard_content{
+        padding: 45px 30px;
+    }
+    .panel_left{
+        max-width: 750px;
+    }
+   
+    .panel_img{
+        width: 99%;
+    }
+
+    .panel_rigth{
+        min-width: 300px;
+        padding: 35px;
+    }
+
+    .panel_content h1{
+        font-size: 1.9em;
+    }
+    .panel_content p{
+        font-size: 0.8em;
+        
+    }
+
+    /*section Social Media*/
+    .headerboard_footer{
+        justify-content: right;
+    }
+    
+    ion-icon{
+        padding: 10px;
+        font-size: 20px;
+    }
+    ion-icon:hover{
+        color: var(--color-secundario);
+        outline-color: 1px solid var(--color-secundario);
+    }
+}
+
+@media (min-width:768px){
+
+    .headerboard_header{
+        background-color: rgba(55, 233, 15, 0.847); 
+    }
+
+    /*Section Images - Info*/
+    .headerboard_content{
+        row-gap: 50px;
+        padding: 50px 10px;
+    }
+    .panel_left{
+        max-width: 670px;
+    }
+    .panel_img{
+        width: 70%;
+    }
+    .panel_rigth{
+        min-width: 499px;
+        text-align: center;
+    }
+
+    /*section Social Media*/
+    .headerboard_footer{
+        justify-content: center;
+    }
+    ion-icon{
+        padding: 10px;
+        font-size: 20px;
+    }
+    ion-icon:hover{
+        color: var(--color-secundario);
+        outline-color: 1px solid var(--color-secundario);
+    }
+
+}
+ 
+@media (max-width:425px){
+    .headerboard_header{
+        background-color: rgba(233, 73, 15, 0.847); 
+    }
+
+    /*Section Images - Info*/
+    .headerboard_content{
+        row-gap: 45px;
+        padding: 30px 10px;
+    }
+    .panel_left{
+        max-width: 576px;
+    }
+    .panel_img{
+        width: 75%;
+    }
+    .panel_rigth{
+        min-width: 370px;
+        text-align: center;
+    }
+    .panel_content h1{
+        font-size: 1.4em;
+        margin-bottom: 1rem;
+    }
+    .panel_content p{
+        font-size: 0.7em;
+        line-height: 1.5em;
+        text-align: center;
+    }
+    .button_container{
+        justify-content: center;
+    }
+    .button_register{
+        padding: 10px 75px;
+    }
+
+    /*section Social Media*/
+    .headerboard_footer{
+        justify-content: center;
+    }
+    ion-icon{
+        padding: 10px;
+        font-size: 20px;
+    }
+}

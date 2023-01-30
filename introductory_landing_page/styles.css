@@ -26,10 +26,10 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    padding: 10px 50px;
+    padding: 10px 30px;
 }
 .header_logo{
-    width: 60%;
+    width: 50%;
 }
 
 .headerboard_content{
@@ -38,11 +38,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    height: auto;
-    padding: 10px 0 ;
+    height: 83vh;
+    padding: 5px 0;
 }
 
-/*Section Panel Left */
+/*Panel Left */
 .panel_left{
     width: auto;
     max-width: 600px;
@@ -50,32 +50,33 @@
     align-items: center;
     justify-content: center;
 }
-
 .panel_img{
-    width: 95%;
+    width: 80%;
+    margin: 10px;
 }
 
-
-/*Section Panel - Rigth*/
+/*Panel - Rigth*/
 .panel_rigth{
-    width: 40%;
-    min-width: 450px;
-    padding: 15px 5px;
+    width: auto;
+    max-width:350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.panel_content h3{
+.panel_content h1{
     color: var(--color-font);
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
     letter-spacing: 2px;
-    margin-bottom: 10px;
 }
 .panel_content p{
     color: var(--color-font);
     font-size: 0.8em;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-    text-align: left;
+    text-align: center;
 }
 
 .button_container{
@@ -83,13 +84,15 @@
     padding: 10px 0;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
 }
 .button_register{
-    padding: 10px 45px;
-    border-radius: 20px;
-    text-decoration: none;
     color: var(--color-principal);
+    padding: 10px 65px;
+    border-radius: 20px;
+    font-family: Arial;
+    font-weight: lighter;
+    text-decoration: none;
     background-color: #ffff;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -98,17 +101,16 @@
     color: #ffff;
 }
 
-
-/*section Social Media*/
+/*footer headerboard Social Media*/
 .headerboard_footer{
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     padding: 6px 50px;
 }
 .headerboard_footer ul{
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .social_media li{
     margin: 8px;
@@ -127,146 +129,6 @@ ion-icon:hover{
 }
 
 
-/* Section responsive desing */
-@media (max-width:768px){
 
-    .headerboard_header{
-        background-color: rgba(15, 73, 233, 0); 
-    }
 
-    /*Section Images - Info*/
-    .headerboard_content{
-        row-gap: 45px;
-        padding: 30px 10px;
-    }
-    .panel_left{
-        max-width: 576px;
-    }
-   
-    .panel_img{
-        width: 75%;
-    }
 
-    .panel_rigth{
-        min-width: 370px;
-        text-align: center;
-    }
-
-    .panel_content h3{
-        font-size: 25px;
-    }
-
-    .panel_content p{
-        font-size: 17px;
-        line-height: 1.5em;
-        text-align: center;
-    }
-
-    .button_container{
-        justify-content: center;
-    }
-
-    .button_register{
-        padding: 10px 75px;
-    }
-
-    /*section Social Media*/
-    .headerboard_footer{
-        justify-content: center;
-    }
-    
-    ion-icon{
-        padding: 10px;
-        font-size: 20px;
-    }
-    
-
-}
-
-@media (min-width:768px){
-
-    .headerboard_header{
-        background-color: rgba(13, 213, 235, 0.932); 
-    }
-
-    /*Section Images - Info*/
-    .headerboard_content{
-        row-gap: 50px;
-        padding: 50px 15px;
-    }
-    .panel_left{
-        max-width: 576px;
-    }
-   
-    .panel_img{
-        width: 95%;
-    }
-
-    .panel_rigth{
-        min-width: 499px;
-    }
-
-    /*section Social Media*/
-    .headerboard_footer{
-        justify-content: right;
-    }
-    
-    ion-icon{
-        padding: 10px;
-        font-size: 20px;
-    }
-    ion-icon:hover{
-        color: var(--color-secundario);
-        outline-color: 1px solid var(--color-secundario);
-    }
-
-}
-
-@media (min-width:1440px){
-    .headerboard_header{
-        background-color: rgba(233, 226, 15, 0.907); 
-    }
-
-    .header_logo{
-        width: 75%;
-    }
-
-    /*Section Images - Info*/
-    .headerboard_content{
-        padding: 45px 30px;
-    }
-    .panel_left{
-        max-width: 750px;
-    }
-   
-    .panel_img{
-        width: 99%;
-    }
-
-    .panel_rigth{
-        min-width: 300px;
-        padding: 35px;
-    }
-
-    .panel_content h3{
-        font-size: 34px;
-    }
-    .panel_content p{
-        font-size: 18px;
-        
-    }
-
-    /*section Social Media*/
-    .headerboard_footer{
-        justify-content: right;
-    }
-    
-    ion-icon{
-        padding: 10px;
-        font-size: 20px;
-    }
-    ion-icon:hover{
-        color: var(--color-secundario);
-        outline-color: 1px solid var(--color-secundario);
-    }
-}
