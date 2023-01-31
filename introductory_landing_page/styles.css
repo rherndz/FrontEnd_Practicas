@@ -14,6 +14,7 @@
     box-sizing: border-box;
 }
 
+/*Headerboard*/
 .headerboard_container{
     height: auto;
     padding: 10px 0;
@@ -26,7 +27,9 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    padding: 10px 30px;
+    padding: 6px 30px;
+    margin-bottom: 25px;
+    background-color: red;
 }
 .header_logo{
     width: 50%;
@@ -35,11 +38,11 @@
 .headerboard_content{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 83vh;
-    padding: 5px 0;
+    row-gap: 10px;
+    height: auto;
 }
 
 /*Panel Left */
@@ -49,9 +52,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .panel_img{
-    width: 80%;
+    width: 69%;
     margin: 10px;
 }
 
@@ -65,15 +69,16 @@
 }
 .panel_content h1{
     color: var(--color-font);
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     letter-spacing: 2px;
+    margin-bottom: 4px;
 }
 .panel_content p{
     color: var(--color-font);
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -88,7 +93,7 @@
 }
 .button_register{
     color: var(--color-principal);
-    padding: 10px 65px;
+    padding: 10px 55px;
     border-radius: 20px;
     font-family: Arial;
     font-weight: lighter;
@@ -119,7 +124,7 @@
 ion-icon{
     color: #ffff;
     padding: 6px;
-    font-size: 20px;
+    font-size: 1em;
     border-radius: 20px;
     outline: 1px solid white;
 }
@@ -128,7 +133,141 @@ ion-icon:hover{
     outline-color: 1px solid var(--color-secundario);
 }
 
+/*Section Responsive Desing*/
+
+/*Dispo mobile y small */
+@media (min-width:430px) and (max-width:946px) {
+    .headerboard_header{
+        background-color: rgba(55, 233, 15, 0.928);
+        margin-bottom: 20px;
+        padding: 10px 40px;
+    }
+
+    .header_logo{
+        width: 54%;
+    }
+
+   /*Section Headerboard*/
+   .headerboard_content{
+        padding: 5px 0;
+        margin-bottom: 10px;
+    }
 
 
+    /*Panel Left */
+    .panel_left{
+        max-width: 580px;
+        margin-bottom: 30px;
+        background-color: red;
+    }
+    .panel_img{
+        width: 75%;
+        margin: 10px;
+    }
 
+    /*Panel - Rigth*/
+    .panel_rigth{
+        max-width: 30rem;
+        min-width: 80px;
+        padding: 15px;
+        background-color: green;
+        
+    }
+    .panel_content h1{
+        font-size: 1.1em;
+        letter-spacing: 2px;
+    }
+    .panel_content p{
+        font-size: 0.9em;
+    }
 
+    /*section Social Media*/
+    .headerboard_footer{
+        justify-content: center;
+    }
+    ion-icon{
+        padding: 10px;
+        font-size: 20px;
+    }
+    ion-icon:hover{
+        color: var(--color-secundario);
+        outline-color: 1px solid var(--color-secundario);
+    }
+
+}
+
+/*dispositive medium y large  */
+@media (min-width:950px) and (max-width:1440px){
+
+    .headerboard_header{
+        margin-bottom: 20px;
+        padding: 10px 40px;
+    }
+
+    .header_logo{
+        width: 60%;
+    }
+
+    /*Section Headerboard*/
+   .headerboard_content{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 auto;
+        background-color: yellow;
+    }
+
+    /*Panel Left */
+    .panel_left{
+        max-width: 475px;
+        background-color: green;
+    }
+    .panel_img{
+        width:90%;
+    }
+
+    /*Panel - Rigth*/
+    .panel_rigth{
+        max-width: 400px;
+        min-width: 80px;
+        padding: 15px;
+        background-color: red;
+        
+    }
+    .panel_content h1{
+        font-size: 1.4em;
+        letter-spacing: 2px;
+        text-align: left;
+        
+    }
+    .panel_content p{
+        font-size: 0.9em;
+        text-align: left;
+    }
+
+    .button_container{
+        margin: 20px 0;
+        padding: 10px 0;
+        justify-content: left;
+    }
+
+    .button_register{
+        padding: 10px 40px;
+    }
+
+    /*section Social Media*/
+    .headerboard_footer{
+        margin: 0;
+        justify-content: right;
+        background-color: red;
+    }
+    ion-icon{
+        padding: 8px;
+        font-size: 1.2em;
+        border-radius: 40px;
+    }
+    ion-icon:hover{
+        color: var(--color-secundario);
+        outline-color: 1px solid var(--color-secundario);
+    }
+
+}
