@@ -29,7 +29,6 @@
     justify-content: left;
     padding: 6px 30px;
     margin-bottom: 25px;
-    background-color: red;
 }
 .header_logo{
     width: 50%;
@@ -138,7 +137,7 @@ ion-icon:hover{
 /*Dispo mobile y small */
 @media (min-width:430px) and (max-width:946px) {
     .headerboard_header{
-        background-color: rgba(55, 233, 15, 0.928);
+        background-color: rgba(55, 233, 15, 0);
         margin-bottom: 20px;
         padding: 10px 40px;
     }
@@ -156,9 +155,8 @@ ion-icon:hover{
 
     /*Panel Left */
     .panel_left{
-        max-width: 580px;
+        max-width: 625px;
         margin-bottom: 30px;
-        background-color: red;
     }
     .panel_img{
         width: 75%;
@@ -167,14 +165,12 @@ ion-icon:hover{
 
     /*Panel - Rigth*/
     .panel_rigth{
-        max-width: 30rem;
-        min-width: 80px;
+        max-width: 430px;
+        min-width: 250px;
         padding: 15px;
-        background-color: green;
-        
     }
     .panel_content h1{
-        font-size: 1.1em;
+        font-size: 1.2em;
         letter-spacing: 2px;
     }
     .panel_content p{
@@ -213,13 +209,12 @@ ion-icon:hover{
         flex-direction: row;
         justify-content: space-around;
         padding: 0 auto;
-        background-color: yellow;
+        height: auto;
     }
 
     /*Panel Left */
     .panel_left{
-        max-width: 475px;
-        background-color: green;
+        max-width: 495px;
     }
     .panel_img{
         width:90%;
@@ -230,7 +225,6 @@ ion-icon:hover{
         max-width: 400px;
         min-width: 80px;
         padding: 15px;
-        background-color: red;
         
     }
     .panel_content h1{
@@ -258,7 +252,6 @@ ion-icon:hover{
     .headerboard_footer{
         margin: 0;
         justify-content: right;
-        background-color: red;
     }
     ion-icon{
         padding: 8px;
@@ -271,3 +264,4 @@ ion-icon:hover{
     }
 
 }
+
