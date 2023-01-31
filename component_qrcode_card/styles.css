@@ -44,7 +44,7 @@ body{
 .card_header{
     height: 250px;
     border-radius: 10px;
-    background-image: url("./img/image-qr-code.png");
+    background-image: url("./images/image-qr-code.png");
     background-size: cover;
     background-position: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
