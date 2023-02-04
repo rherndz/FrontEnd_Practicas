@@ -185,11 +185,7 @@ ion-icon:hover{
         padding: 10px;
         font-size: 20px;
     }
-    ion-icon:hover{
-        color: var(--color-secundario);
-        outline-color: 1px solid var(--color-secundario);
-    }
-
+   
 }
 
 /*dispositive medium y large  */
@@ -198,6 +194,7 @@ ion-icon:hover{
     .headerboard_header{
         margin-bottom: 20px;
         padding: 10px 40px;
+        background-color:red;
     }
 
     .header_logo{
@@ -209,7 +206,7 @@ ion-icon:hover{
         flex-direction: row;
         justify-content: space-around;
         padding: 0 auto;
-        height: auto;
+        height: 73vh;
     }
 
     /*Panel Left */
@@ -258,10 +255,76 @@ ion-icon:hover{
         font-size: 1.2em;
         border-radius: 40px;
     }
-    ion-icon:hover{
-        color: var(--color-secundario);
-        outline-color: 1px solid var(--color-secundario);
-    }
+   
 
 }
 
+/*dispositivos large y Tv  */
+@media (min-width:1441px){
+
+    .headerboard_header{
+        padding: 10px 40px;
+        background-color: blueviolet;
+    }
+
+    .header_logo{
+        margin-left: 3rem;
+        width: 60%;
+    }
+    
+    /*Section Headerboard*/
+   .headerboard_content{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 auto;
+        height: 76vh;
+    }
+
+    /*Panel Left */
+    .panel_left{
+        max-width: 950px;
+    }
+    .panel_img{
+        width:98%;
+    }
+
+    /*Panel - Rigth*/
+    .panel_rigth{
+        max-width: 600px;
+        min-width: 80px;
+        padding: 15px;
+        
+    }
+    .panel_content h1{
+        font-size: 1.9em;
+        letter-spacing: 2px;
+        text-align: left;
+        
+    }
+    .panel_content p{
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .button_container{
+        
+        justify-content: left;
+    }
+
+    .button_register{
+        padding: 10px 40px;
+    }
+
+
+    /*section Social Media*/
+     .headerboard_footer{
+        justify-content: right;
+    }
+
+    ion-icon{
+        padding: 9px;
+        font-size: 1.3em;
+        border-radius: 40px;
+    }
+    
+}
