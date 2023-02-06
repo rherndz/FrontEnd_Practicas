@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: left;
     padding: 6px 30px;
-    margin-bottom: 25px;
+    background-color: red;
 }
 .header_logo{
     width: 50%;
@@ -37,11 +37,13 @@
 .headerboard_content{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
+    row-gap: 15px;
     align-items: center;
-    justify-content: space-around;
-    row-gap: 10px;
-    height: auto;
+    justify-content: center;
+    height: 79vw;
+    padding: 10px 6px;
+    margin: 10px 0 10px 0;
 }
 
 /*Panel Left */
@@ -51,24 +53,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    padding: 6px;
+    background-color: green;
 }
 .panel_img{
-    width: 69%;
-    margin: 10px;
+    width: 79%;
 }
 
 /*Panel - Rigth*/
 .panel_rigth{
     width: auto;
-    max-width:350px;
+    max-width:550px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    background-color: antiquewhite;
 }
 .panel_content h1{
     color: var(--color-font);
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -81,6 +85,7 @@
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    margin: 0 2.1em;
 }
 
 .button_container{
