@@ -26,10 +26,10 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    padding: 6px 30px;
+    padding: 10px 30px;
 }
 .header_logo{
-    width: 50%;
+    width: 58%;
 }
 
 .headerboard_content{
@@ -39,7 +39,7 @@
     row-gap: 8px;
     align-items: center;
     justify-content: center;
-    height: 140vw;
+    height: 150vw;
     padding: 10px 20px;
     margin: 10px 0 10px 0;
 }
@@ -135,7 +135,7 @@ ion-icon:hover{
 
 /*Section Responsive Desing*/
 
-/* Section responsive for normal phones and tablets (430px - 946px) */
+/*Section responsive for normal phones and tablets (430px - 946px)*/
 @media (min-width:430px) and (max-width:946px) {
     .headerboard_header{
         background-color: rgba(55, 233, 15, 0);
@@ -190,7 +190,7 @@ ion-icon:hover{
    
 }
 
-/* Section responsive for normal and medium laptops (950px - 1440px)  */
+/*Section responsive for normal and medium laptops (950px - 1440px)*/
 @media (min-width:950px) and (max-width:1440px){
 
     .headerboard_header{
@@ -261,7 +261,7 @@ ion-icon:hover{
 
 }
 
-/*dispositivos large y Tv  */
+/*Section responsive for large laptops and 4k screens (1440px) */
 @media (min-width:1441px){
 
     .headerboard_header{
