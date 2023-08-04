@@ -21,6 +21,7 @@ body{
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 40px;
+    align-items: center;
     justify-content: space-around;
     height: auto;
     margin: 40px 0;
@@ -28,7 +29,7 @@ body{
 }
 .card_item{
     max-width: 310px;
-    height: 450px;
+    height: 490px;
     margin: 0 3px;
     padding:14px;
     border-radius: 12px;
@@ -42,22 +43,21 @@ body{
     outline: 4px solid rgb(88, 88, 88);
 }
 .card_header{
-    height: 250px;
+    height: 260px;
     border-radius: 10px;
-    background-image: url("./images/image-qr-code.png");
-    background-size: cover;
-    background-position: center;
+    margin-bottom: 1em;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.card-img{
-    width: 240px;
-    border-radius: 20px;
+.card_header_images{
+    width:100%;
+    border-radius: 10px;
 }
+
 .card_body{
     text-align: center;
     margin: 0 3px;
 }
-.card_body h3{
+.card_body h1{
     font-size: 19px;
     font-weight: 700;
     font-family: 'Outfit', sans-serif;

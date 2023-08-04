@@ -25,12 +25,6 @@
 
 body{
     background: var(--color-background);
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Section Wrapper / Cards */
@@ -38,17 +32,18 @@ body{
     display: flex;
     flex-wrap: wrap;
     
+    align-items: center;
     justify-content: center;
     width: auto;
-    min-width:350px;
-    padding: 40px 30px;
-    
+    min-width:50px;
+    margin-top: 4em;
+    padding: 2em 1em;
 }
 .item_card{
-    max-width: 310px;
+    max-width: 300px;
     min-width: 250px;
-    height: auto;
-    padding:20px;
+    height: 21em;
+    padding:1.3em;
     
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
@@ -68,7 +63,7 @@ body{
 .item_card_image{
     position: relative;
     margin-top: 20px;
-    padding: 10px;
+    padding: 0.8em;
 }
 .item_card_icon{
     position: relative;
@@ -78,8 +73,10 @@ body{
 
 /*Section Body*/
 .item_card_body{
-    margin: 10px 0 ;
-    padding: 10px 3px;
+    height: 14em;
+    margin: 5px 0 ;
+    padding: 1em 0;
+    
 }
 .item_card_body span{
     color: var(--color-font-title);
@@ -129,7 +126,7 @@ body{
 }
 
 /* Section Responsive Desing */
-@media (max-width:768px) {
+@media (max-width:1004px) {
     .item_orange{
         border-radius: 10px 0 0 10px;
     }
@@ -143,7 +140,12 @@ body{
     }
 }
 
-@media (max-width:425px) {
+@media (max-width:658px) {
+
+    .card__wrapper{
+        margin-top: 2em;
+    }
+   
     .item_orange{
         border-radius: 10px 10px 0 0;
     }

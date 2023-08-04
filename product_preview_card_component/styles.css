@@ -1,0 +1,216 @@
+:root{
+    --color-font:hsl(228, 12%, 48%);
+    --color-white:hsl(0, 0%, 100%);
+    --color-black:rgba(0, 0, 0, 0);
+    --color-principal:hsl(158, 36%, 37%);
+    --color-secundario:hsl(212, 21%, 14%);
+    --color-background:hsl(30, 38%, 92%);
+}
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: var(--color-background);
+}
+
+/*--- Card Component ----*/
+.cards-component{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 6em;
+    padding: 2em 2em;
+}
+.card-product{
+    width: 100%;
+    max-width: 350px;
+    min-width: 260px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px ;
+    background-color: var(--color-white);
+}
+.card-product:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/*--- Card Content  ----*/
+.card-product-img-mobile{
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-product-img-desktop{
+    display: none;
+}
+.card-content{
+    padding: 1em 1.5em;
+}
+.product-category{
+    color: var(--color-font);
+    font-size: 12px;
+    font-family: 'Fraunce' arial;
+    font-weight:lighter ;
+    letter-spacing: 5px;
+}
+.product-title{
+    font-size: 34px;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0.3em 0 ;
+}
+.product-descript{
+    color: var(--color-font);
+    font-size: 15px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    margin: 1.2em auto;
+}
+.product-price{
+    color: var(--color-principal);
+    font-size: 33px;
+    font-weight: 700;
+    font-family: 'montserrat';
+    margin: 8px 0;
+}
+.product-price span{
+    color: var(--color-font);
+    font-size: 12px;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+/*--- Card Button ---*/
+.card-content-footer{
+    margin-top: 1.3em;
+    margin-bottom: 1em;
+    padding: 0 auto;
+}
+.card-button-add{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--color-principal);
+    
+    color:var(--color-white);
+    font-size: 19px;
+    text-decoration: none;
+}
+.card-button-add:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.icon-button{
+    margin: 0 0.5em;
+}
+
+
+/*Section Responsive Desing*/
+
+/* Media Query para versiones responsivas hasta 425px */
+@media screen and (max-width: 425px) {
+    .cards-component {
+        width: 100%;
+        min-width: fit-content;
+        flex-direction: column;
+        align-content: center;
+        margin: 0 auto;
+        padding: 1em;
+    }
+    .card-product {
+        width: 100%; 
+        min-width: 200px;
+    }
+    .card-panel-image {
+        margin-bottom: 10px; 
+    }
+    .card-product-img-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .card-product-img-desktop {
+        display: none;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    /*--- Card Component ----*/
+    .cards-component{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 5em;
+        padding: 3em;
+    }
+    .card-product{
+        height: auto;
+        max-width: 600px;
+        min-width: 450px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .card-panel-image{
+        flex: 0 0 51%;
+    }
+    .card-panel-text{
+       flex: 1;
+       width: auto;
+       max-height: max-content;
+       padding: 0 auto;
+    }
+    
+    /*--- Card Content  ----*/
+    .card-product-img-mobile{
+        display: none;
+    }
+    .card-product-img-desktop{
+        width: 100%;
+        display: flex;
+        object-fit: cover;
+        border-radius: 10px 0 0 10px;
+    }
+    .product-category{
+        font-size: 13px;
+    }
+    .product-title{
+        font-size: 38px;
+        margin: 0.6em 0 ;
+    }
+    .product-descript{
+        font-size: 15px;
+        margin: 1.3em 0;
+    }
+    .product-price{
+        font-size: 35px;
+        margin: 8px 0;
+    }
+    .product-price span{
+        font-size: 13px;
+    }
+
+    /*--- Card Button ---*/
+    .card-content-footer{
+        margin-top: 2em;
+        padding: 0 auto;
+    }
+   
+}

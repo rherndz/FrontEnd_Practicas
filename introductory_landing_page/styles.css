@@ -39,7 +39,7 @@
     row-gap: 8px;
     align-items: center;
     justify-content: center;
-    height: 150vw;
+    height: 135vw;
     padding: 10px 20px;
     margin: 10px 0 10px 0;
 }
@@ -208,7 +208,7 @@ ion-icon:hover{
         align-items: center;
         justify-content: space-around;
         padding: 0 auto;
-        height: 35vw;
+        height: 74vh;
     }
 
     /*Panel Left */
