@@ -4,7 +4,6 @@
 
 <p align="left"> Esta carpeta contiene una serie de prácticas enfocadas en mejorar mis conocimientos en el desarrollo web, centrándome especialmente en HTML y CSS. Cada proyecto aborda diferentes aspectos y técnicas para fortalecer mis habilidades.</p>
 
-
 <h2 align="left"> 📍 ¡Herramientas! 📍 </h2>
 
 <div align="left">
@@ -54,12 +53,12 @@
 8. **Blog preview card**
    - Este desafío de solo HTML y CSS es un proyecto perfecto para que los principiantes se pongan al día con los fundamentos de HTML y CSS, como la estructura HTML y el modelo de caja.
    - [Código Fuente](Enlace al código en GitHub)
-   - [Versión Desplegada]:(Enlace a la versión desplegada en GitHub Pages)
+   - [Versión Desplegada](Enlace a la versión desplegada en GitHub Pages)
   
 9. **Single price grid component**
    - En este desafío, construirás el componente de precios para los diseños proporcionados. Esto es perfecto para principiantes y personas que quieren completar un desafío más pequeño.
    - [Código Fuente](Enlace al código en GitHub)
-   - [Versión Desplegada]: (Enlace a la versión desplegada en GitHub Pages)
+   - [Versión Desplegada](Enlace a la versión desplegada en GitHub Pages)
 
 10. **NFT preview card component**
    - Este desafío solo de HTML y CSS es perfecto para cualquiera que recién comience o para cualquiera que desee un pequeño proyecto con el que jugar.
@@ -71,7 +70,6 @@
    - [Código Fuente](Enlace al código en GitHub)
    - [Versión Desplegada](Enlace a la versión desplegada en GitHub Pages)
 ...
-
 
 
 ## 📍 Instrucciones de Uso 📍
