@@ -24,7 +24,7 @@ body{
     display:  flex;
     align-items: center;
     justify-content: center;
-    margin: 2em;
+    margin: 2.6em 0;
     padding: 2em 2em;
 
 }
@@ -34,7 +34,7 @@ body{
     flex-direction: column;
     column-gap: 6em;
     height: auto;
-    max-width: 455px;
+    max-width: 400px;
     min-width: 200px;
     padding: 1.9em;
     padding-bottom: 0.9em;
@@ -52,7 +52,7 @@ body{
     background-position: center;
     margin-bottom: 1.5em;
     border-radius: 10px;
-    background-image: url("/blog-preview-card-main/images/illustration-article.svg");
+    background-image: url("../blog-preview-card-main/images/illustration-article.svg");
 }
 
 /* Section - Card Body*/

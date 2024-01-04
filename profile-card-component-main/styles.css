@@ -21,7 +21,7 @@ main{
     background-color: var(--color-DarkCyan-background);
     background-size:cover;
     background-position:center;
-    background-image: url("/profile-card-component-main/image/bg-pattern-top.svg");
+    background-image: url("../profile-card-component-main/image/bg-pattern-top.svg");
     
 }
 
@@ -56,7 +56,7 @@ main{
 .headerboard-card{
     height: 11em;
     border-radius: 12px 12px 0 0;
-    background-image: url("/profile-card-component-main/image/bg-pattern-card.svg");
+    background-image: url("../profile-card-component-main/image/bg-pattern-card.svg");
     background-size: cover;
     background-position: center;
     background-color: var(--color-DarkCyan-background);
