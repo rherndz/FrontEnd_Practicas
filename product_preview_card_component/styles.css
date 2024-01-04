@@ -1,10 +1,10 @@
 :root{
-    --color-font:hsl(228, 12%, 48%);
-    --color-white:hsl(0, 0%, 100%);
+    --color-font:rgb(108, 114, 137);
+    --color-white:rgb(255, 255, 255);
     --color-black:rgba(0, 0, 0, 0);
-    --color-principal:hsl(158, 36%, 37%);
-    --color-secundario:hsl(212, 21%, 14%);
-    --color-background:hsl(30, 38%, 92%);
+    --color-principal:rgb(60, 128, 103);
+    --color-secundario:rgb(28, 35, 43);
+    --color-background:rgb(242, 235, 227);
 }
 *{ 
     margin: 0;
@@ -211,6 +211,13 @@ body{
     .card-content-footer{
         margin-top: 2em;
         padding: 0 auto;
+    }
+
+    .attribution{
+        font-size: 18px; 
+        text-align: center; 
+        color: rgb(0, 0, 0);
+        padding: 1em 2em;
     }
    
 }

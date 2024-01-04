@@ -100,6 +100,14 @@ body{
     letter-spacing: 3px;
 }
 
+/* Section Footer */
+.attribution{
+    text-align: center;
+    margin-top: 2em;
+    padding: 2em;
+    color: var(--color-font-title);
+}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 1014px) {
