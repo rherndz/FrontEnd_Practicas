@@ -4,6 +4,16 @@
 
 <p align="left"> Esta carpeta contiene una serie de prácticas enfocadas en mejorar mis conocimientos en el desarrollo web, centrándome especialmente en HTML y CSS. Cada proyecto aborda diferentes aspectos y técnicas para fortalecer mis habilidades.</p>
 
+
+<h2 align="left"> 📍 ¡Herramientas! 📍 </h2>
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+</div>
+
+
 ## 📍 Lista de Prácticas 📍
 
 1. **Component 3 column cards**
@@ -24,7 +34,7 @@
 4. **Order summary component main**
    - ¡Un proyecto perfecto para los novatos que están empezando a construir confianza con los diseños!
    - [Código Fuente](Enlace al código en GitHub)
-   - [Versión Desplegada]:(https://rherndz.github.io/FrontEnd_Practicas/order-summary-component-main)
+   - [Versión Desplegada](https://rherndz.github.io/FrontEnd_Practicas/order-summary-component-main)
 
 5. **Product preview card component**
    - Este desafío solo de HTML y CSS será perfecto para cualquiera que comience a construir proyectos receptivos.
@@ -62,13 +72,7 @@
    - [Versión Desplegada](Enlace a la versión desplegada en GitHub Pages)
 ...
 
-<h2 align="left"> 📍 ¡Herramientas! 📍 </h2>
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
-</div>
 
 ## 📍 Instrucciones de Uso 📍
 
