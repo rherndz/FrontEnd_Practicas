@@ -4,9 +4,9 @@
 
 <p align="left"> Esta carpeta contiene una serie de practicas enfocados en mejorar mis conocimientos en el desarrollo web, centrándome especialmente en HTML y CSS. Cada proyecto aborda diferentes aspectos y técnicas para fortalecer mis habilidades.</p>
 
-<h2 align="center"> 📍 ¡Herramientas! 📍 </h2>
+<h2 align="left"> 📍 ¡Herramientas! 📍 </h2>
 
-<div align="center">
+<div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
@@ -79,5 +79,4 @@ Puedes clonar el repositorio y explorar cada proyecto individualmente. Sigue las
 ¡Se aceptan contribuciones y sugerencias! Si encuentras errores o tienes ideas para mejorar alguno de los proyectos, no dudes en abrir un problema o enviar una solicitud de extracción.
 
 ¡Gracias por visitar mi repositorio! 🤖
-
 
