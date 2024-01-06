@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +9,33 @@
 
 <body>
     <main>
-        <section class="section-container">
+        <section class="section-card-component">
 
             <div class="grid-card-container">
-                <div class="grid-card-panel panel-top">
-                    <h1 class="title-panel-top">Join our community</h1>
-                    <span class="subtitle-panel-top">30-day, hassle-free money back guarantee</span>
-                    <p class="text-panel-top">Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills..</p>
-                </div>
+                <header class="grid-card-panel panel-header">
+                    <h1 class="panel-header-title">Join our community</h1>
 
-                <div class="grid-card-panel panel-bottom">
-                    <div class="panel-left">
-                        <h2 class="title-panel-center">Monthly Subscription</h2>
-                        <p class="subtitle-panel-center">$29 <span>per month</span></p>
-                        <p class="text-panel-center">Full access for less than $1 a day</p>
+                    <span class="panel-header-subtitle">30-day, hassle-free money back guarantee</span>
+
+                    <p class="panel-header-text">Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills..</p>
+                </header>
+
+                <slide class="grid-card-panel panel-body">
+                    <div class="slider-panel-left">
+                        <h2 class="slider-title-left">Monthly Subscription</h2>
+                        <strong class="slider-price-left">$29 <small class="slider-price-month">per month</small></strong>
+                        <p class="slider-text-left">Full access for less than $1 a day</p>
     
-                        <button type="submit"><a href="#">Sign Up</a></button>
+                        <button class="slider-action-button" type="submit">Sign Up</button>
                     </div>
     
-                    <div class="panel-rigth">
-                        <h3 class="title-panel-bottom">Why Us</h3>
-                        <p class="text-panel-bottom">
+                    <div class="slider-panel-right">
+                        <h3 class="slider-title-right">Why Us</h3>
+                        <p class="slider-text-right">
                             Tutorials by industry experts Peer & expert code review Coding exercises Access to our GitHub repos Community forum Flashcard decks New videos every week
                         </p>
                     </div>
-                </div>
+                </slide>
             </div>
 
         </section>

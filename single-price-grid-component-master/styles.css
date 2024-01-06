@@ -1,65 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
 :root{
-    --color-font-title:hsl(0, 0%, 100%);
-    --color-font-resalt:hsl(277, 64%, 61%);
-    --color-font-text:hsla(0, 0%, 100%, 0.75);
-    --color-font-card:hsla(0, 0%, 100%, 0.6);
+    --color-Cyan-title: rgb(13, 196, 181);;
+    --color-BrightYellow-subtitle:rgb(174, 234, 0);
+    --color-BrightYellow-hover:rgb(203, 238, 50);
+    --color-LightGray-header:rgb(229, 239, 245);
+    --color-GrayishBlue-text:rgb(183, 186, 191);
+    --color-GrayishBlue-subtitle:rgb(247, 248, 250);
     
-    --color-card-background:hsl(244, 38%, 16%);
-    --color-component-background:hsl(233, 47%, 7%);
+    --color-card-background:rgb(13, 196, 181);
+    --color-cardS-background:rgb(19, 161, 150);
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 
-.section-container{
+body{
+    background-color: rgb(220, 237, 200);
+}
+
+/* Card component */
+.section-card-component{
+    width: 100%;
     height: auto;
-    min-width: 350px;
-    background-color: rgba(58, 116, 215, 0.879);
-    padding: 1px;
-}
-
-/* Section grid container */
-.grid-card-container{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin: 1em;
-    padding: 20px;
-    
-    background-color: rgba(233, 208, 211, 0.645);
-}
-
-.grid-card-panel{
-    background-color: aqua;
-    padding: 15px;
-}
-
-/* Grid - panel*/
-.panel-top{
-    grid-area: panel-top;
-    background-color: white;
-}
-
-.panel-bottom{
-    grid-area: panel-bottom;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+    padding: 1em 2em;
     
-    background-color: rgba(135, 246, 9, 0.778);
 }
 
-.panel-left{
-    width: 100%;
-    background-color: antiquewhite;
-    padding: 1em;
+/* Card Grid container */
+.grid-card-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 490px;
+    min-width: 300px;
+    margin: 1em 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 50px;
 }
-.panel-rigth{
+
+/* -- Grid - Panel header -- */
+.panel-header{
     width: 100%;
-    background-color: aqua;
+    min-width: 300px;
+    max-width: auto;
+    padding: 3em 2em;
+    background-color: rgb(255, 255, 255);
+}
+
+.panel-header-title{
+    font-size: 22px;
+    font-weight: bolder;
+    margin-bottom: 0.9em;
+    color:var(--color-Cyan-title) ;
+}
+.panel-header-subtitle{
+    font-size: 19px;
+    font-weight: bolder;
+    margin-bottom: 1.6em;
+    color: var(--color-BrightYellow-subtitle);
+}
+.panel-header-text{
+    font-size: 17px;
+    line-height: 1.6em;
+    margin-top: 0.6em;
+    max-width: 585px;
+    color: var(--color-GrayishBlue-text);
+}
+
+/* -- Grid - Panel Body --*/
+.panel-body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-card-background);
+}
+
+/* ------------------------------ */
+.slider-panel-left{
+    width: 100%;
+    padding: 3em 2em;
+}
+
+.slider-title-left{
+    line-height: 2em;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.slider-price-left{
+    color: white;
+    font-size: 39px;
+    margin: 9px 0;
+}
+.slider-price-month{
+    font-size: 18px;
+    font-weight:500;
+    line-height: 2em;
+    letter-spacing: 1px;
+    margin-left: 6px;
+    color: var(--color-GrayishBlue-subtitle);
+}
+.slider-text-left{
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin: 5px;
+    color: white;
+}
+
+.slider-action-button{
+    cursor: pointer;
+    width: 100%;
+    margin: 1.8em auto;
+    padding: 15px 5px;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    justify-content:space-around;
+    
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: var(--color-BrightYellow-subtitle);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.slider-action-button:hover{
+    color: white;
+    background-color: var(--color-BrightYellow-hover);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* ------------------------------ */
+.slider-panel-right{
+    width: 100%;
+    padding: 3em 2em;
+    background-color: var(--color-cardS-background);
+}
+.slider-title-right{
+    line-height: 2em;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: white;
+}
+.slider-text-right{
+    color: white;
+    font-size: 16px;
+    line-height: 1.4em;
+    max-width: 189px;
+}
+
+/* Section Footer */
+.attribution{
+    text-align: center;
+    font-size: 19px;
+    font-weight: 800;
+    padding: 1em;
+    color: var(--color-Cyan-title);
+}
+.attribution a{
+    font-weight: bolder;
+    color: var(--color-BrightYellow-subtitle);
+}
+
+
+/* ------------------------------------ */
+    /* Section Responsive Desing  */
+/* ------------------------------------- */
+
+/* Dispositive Mobile - max (425px)*/
+@media screen and (max-width: 480px) {
+    body{
+        background-color: #dcedc800;
+    }
+    
+
+}
+
+/* Dispositive Tablet - Min (481px)  Max(768) */
+
+/*Tablet Verticales*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Card Grid container */
+    .grid-card-container{
+        width: 100%;
+        max-width: 450px;
+        min-width: 300px;
+    }
+    
+    /* ------------------------------ */
+    .slider-panel-left{
+        padding: 1.5em 2em;
+    }
+
+    /* ------------------------------ */
+    .slider-panel-right{
+        padding: 1.5em 2em;
+    }
+
+}
+
+/*Tablet Horizontales*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* Card Grid container */
+    .grid-card-container{
+        width: 100%;
+        max-width: 675px;
+        min-width: 300px;
+        border-radius: 25px;
+    }
+    
+    /* -- Grid - Panel Body --*/
+    .panel-body{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
+    
+    /* ------------------------------ */
+    .slider-panel-left{
+        padding: 1em 1.5em;
+    }
+
+    /* ------------------------------ */
+    .slider-panel-right{
+        padding: 1em 1.5em;
+    }
+}
+
+/* Dispositive y Portatitles - Tamaño mediano*/
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    /* Card Grid container */
+    .grid-card-container{
+        width: 100%;
+        max-width: 700px;
+    }
+    
+    /* -- Grid - Panel Body --*/
+    .panel-body{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
+    
+    /* ------------------------------ */
+    .slider-panel-left{
+        padding: 1.5em 1.4em;
+    }
+    /* ------------------------------ */
+    .slider-panel-right{
+        padding: 1.5em 1.4em;
+    }
+}
+
+/* Dispositive Desktop - Pantallas Tamaño grandes */
+@media screen and (min-width: 1201px) {
+
+    /* Card Grid container */
+    .grid-card-container{
+        width: 100%;
+        max-width: 770px;
+        margin-top: 3em;
+    }
+    
+    /* -- Grid - Panel Body --*/
+    .panel-body{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
+    
+    /* ------------------------------ */
+    .slider-panel-left{
+        padding: 2em 1.5em;
+    }
+
+    /* ------------------------------ */
+    .slider-panel-right{
+        padding: 2em 1.5em;
+    }
 }

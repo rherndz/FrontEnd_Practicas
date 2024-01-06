@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+:root{
+    --Cyan: rgb(0, 255, 247);
+    --Soft-blue: rgb(139, 172, 218);
+
+    --Very-darkblue-card: rgb(20, 37, 61); /* (card BG) */
+    --Very-darkblue-main: rgb(13, 25, 43); /* (main BG) */
+    --Verydarkblue-line: rgb(47, 65, 91); /* (line) */ 
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+main{
+    background-color: var(--Very-darkblue-main);
+}
+
+/* Section component cards */
+.section-component-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3em 1em;
+    background-color: var(--Very-darkblue-main);
+}
+
+/* Card NFT - content */
+.card-container-nft{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    max-width: 390px;
+    min-width: 300px;
+
+    padding: 2em;
+    border-radius: 13px;
+    background-color: var(--Very-darkblue-card);
+
+}
+
+.card-header-content{
+    width: 100%;
+    max-width: 330px;
+    height: 19em;
+    margin: 0 auto;
+    border-radius: 10px;
+    
+    background-position: center;
+    background-size:390px;
+    background-repeat: no-repeat;
+    background-color: var(--Cyan);
+    background-image: url("../nft-preview-card-component-main/images/image-equilibrium.jpg");
+}
+
+.card-header-content:hover{
+    cursor: pointer;
+    background-image: url("../nft-preview-card-component-main/images/icon-view.svg");
+    background-size: 60px;
+    background-repeat: no-repeat;
+    color: rgba(255, 255, 255, 0.244);
+    transition: 0.2s;
+}
+
+
+/* Card Body */
+.card-title{
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.card-title:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.card-descript{
+    margin-top: 1em;
+    font-size: 17px;
+    line-height: 1.8em;
+    color: var(--Soft-blue);
+}
+
+.card-body-content{
+    margin: 0 auto;
+    color: white;
+}
+.section-panel-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 1.2em 0;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--Verydarkblue-line);
+}
+
+.panel-price , .panel-days{
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+}
+
+.panel-price p{
+    color: var(--Cyan);
+}
+
+.panel-price{
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--Cyan);
+    transition: 0.3s;
+}
+
+.panel-days p{
+    color: var(--Soft-blue);
+}
+
+/*Card Footer - Profile*/
+.card-footer-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    column-gap: 20px;
+    color: white;
+}
+
+.footer-avatar-profile{
+    width: 12%;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+.card-footer-text{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.profile-name:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+/* footer section */
+.footer-section{
+    background-color: var(--Very-darkblue-main);
+}
+
+.attribution{
+    padding: 1em 2em;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
