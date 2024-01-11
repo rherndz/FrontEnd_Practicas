@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 :root{
     --Cyan: rgb(0, 255, 247);
     --Soft-blue: rgb(139, 172, 218);
@@ -16,7 +17,7 @@
     font-family: 'Outfit', sans-serif;
 }
 
-main{
+body{
     background-color: var(--Very-darkblue-main);
 }
 

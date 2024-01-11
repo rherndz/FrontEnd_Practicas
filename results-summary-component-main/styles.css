@@ -25,13 +25,15 @@
 }
 
 body{
-    background-color: rgba(104, 112, 231, 0.748);
+    background-color: rgb(255, 255, 255);
 }
 
 .component-container{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin: 0 auto;
 }
 
 /*  Card flex  */
@@ -242,6 +244,13 @@ footer{
     
     body{
         background-color: rgba(255, 0, 0, 0);
+    }
+
+    .component-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
     }
 
 }
