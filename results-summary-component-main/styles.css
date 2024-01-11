@@ -1,0 +1,382 @@
+:root{
+    /* -- color - primarios -- */
+    --color-Light-red:hsl(0, 100%, 67%);
+    --color-Orangey-yellow: hsl(39, 100%, 56%);
+    --color-Green-teal: hsl(166, 100%, 37%);
+    --color-Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* -- color - secundarios -- */
+    --color-White: hsl(0, 0%, 100%);
+    --color-Pale-blue: hsl(221, 100%, 96%);
+    --color-Light-lavender: hsl(241, 100%, 89%);
+
+    /* -- color - Background -- */
+    --color-Light-red-brackground:rgba(255, 87, 87, 0.163);
+    --color-Orangey-yellow-brackground: rgba(255, 176, 31, 0.162);
+    --color-Green-teal-brackground: rgba(0, 189, 145, 0.121);
+    --color-Cobalt-blue-brackground: rgba(17, 37, 212, 0.12);
+    --color-button-background:rgb(48, 59, 90);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body{
+    background-color: rgba(104, 112, 231, 0.748);
+}
+
+.component-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  Card flex  */
+.card-grid-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    border: none;
+    border-radius: 0 0 25px 25px;
+    background-color: white;
+
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+/* Card slider left */
+.card-slider-left{
+    width: auto;
+    min-width: 100px;
+    padding: 1.6em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0 0 40px 40px;
+    background: rgba(90, 60, 222, 1.0);
+    background: linear-gradient(180deg, rgba(90, 60, 222, 1.0), rgba(22, 17, 113, 1.0));
+
+}
+.result-title{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 2em;
+    color: var(--color-Light-lavender);
+}
+.decoraction-circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    width: 160px;
+    height: 160px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; 
+
+    background: rgb(80, 50, 163);
+    background: radial-gradient(at center top, rgba(78, 34, 203, 1.0), rgba(28, 27, 106, 0.593));
+}
+.decoraction-circle strong{
+    font-size: 50px;
+    color: var(--color-White);
+}
+.decoraction-circle span{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-Light-lavender);
+}
+
+.description{
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+}
+.description-title{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 2em;
+    color: rgb(255, 255, 255);
+}
+.description p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6em;
+    color: var(--color-Light-lavender);
+
+    max-width: 240px;
+}
+
+
+/* Card slider Rigth */
+.card-slider-right{
+    width: auto;
+    min-width: 100px;
+    margin: 1em;
+    padding: 0.8em 0.9em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    row-gap: 20px;
+}
+.summary-title{
+    font-size: 18px;
+    margin: 10px;
+}
+.summary-result-panel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 19px;
+    list-style: none;
+    font-weight: 700;
+}
+
+#icon{
+    margin: 5px;
+    font-weight: 600;
+}
+
+/*panel reaction*/
+.reaction{
+    background-color: var(--color-Light-red-brackground);
+    border-radius: 8px;
+}
+.reaction-title{
+    color: var(--color-Light-red);
+}
+
+/*panel memory*/
+.memory{
+    background-color: var(--color-Orangey-yellow-brackground);
+    border-radius: 8px;
+}
+.memory-title{
+    color: var(--color-Light-red);
+}
+
+/*panel verbal*/
+.verbal{
+    background-color: var(--color-Green-teal-brackground);
+    border-radius: 8px;
+}
+.verbal-title{
+    color: var(--color-Green-teal);
+}
+
+/*panel visual*/
+.visual{
+    background-color: var(--color-Cobalt-blue-brackground);
+    border-radius: 8px;
+}
+.visual-title{
+    color: var(--color-Cobalt-blue);
+}
+
+.result{
+    font-weight: 600;
+}
+.result-act{
+    font-size: 16px;
+    font-weight:600;
+    color: grey;
+    margin: 5px;
+}
+
+/*Button*/
+.button-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1em;
+}
+.button-result{
+    width: 100%;
+    border-radius: 30px;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    background-color:var(--color-button-background) ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.button-result:hover{
+    background-color: rgba(90, 60, 222, 1.0);
+    background: linear-gradient(180deg, rgba(90, 60, 222, 1.0), rgba(22, 17, 113, 1.0));
+}
+.button-result strong{
+    color: white;
+    font-size: 20px;
+}
+
+
+/* -- Footer -- */
+footer{
+    margin-top: 1em;
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+/* ------------------------------------ */
+    /* Section Responsive Desing  */
+/* ------------------------------------- */
+
+
+/* Dispositive Mobile - max (425px)*/
+@media screen and (max-width: 425px) {
+    
+    body{
+        background-color: rgba(255, 0, 0, 0);
+    }
+
+}
+
+/* --- Tablet Verticales --- */
+/* Dispositive Tablet - Min (481px)  Max(768) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+    body{
+        background-color: rgba(183, 185, 194, 0);
+    }
+
+    .component-container{
+        background-color: rgba(228, 41, 163, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2em;
+    }
+    
+    /*  Card flex  */
+    .card-grid-container{
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        max-width: 450px;
+        border-radius: 0 0 25px 25px;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    /* Card slider left */
+    .card-slider-left{
+        width: auto;
+        border-radius: 0 0 25px 25px;
+        
+    }
+
+    /* Card slider right */
+    .card-slider-right{
+        width: auto;
+    }
+    
+
+}
+
+/* --- Tablet Horizontales --- */
+/* Dispositive Tablet - Min (769px)  Max(1024) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    body{
+        background-color: rgba(205, 235, 13, 0);
+    }
+
+    .component-container{
+        padding: 1em 2em;
+    }
+
+    /*  Card Grid  */
+    .card-grid-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        min-width: 450px;
+        max-width: 650px;
+        border-radius: 25px;
+    }
+
+    /* Card slider left */
+    .card-slider-left{
+        border-radius: 25px;
+    }
+
+    
+}
+
+/* --- Dispositive y Portatitles - Tamaño mediano --- */
+/* Dispositive Tablet - Min (1025px)  Max(1200) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    body{
+        background-color: rgba(231, 202, 39, 0);
+    }
+
+    .component-container{
+        padding: 1em 2em;
+    }
+
+    /*  Card Grid  */
+    .card-grid-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        min-width: 450px;
+        max-width: 650px;
+        border-radius: 25px;
+    }
+
+    /* Card slider left */
+    .card-slider-left{
+        border-radius: 25px;
+    }
+
+
+}
+
+/* --- Dispositive Desktop - Pantallas Tamaño grandes --- */
+/* Dispositive Tablet - Min (1201px)  Max() */
+@media screen and (min-width: 1201px) {
+
+    body{
+        background-color: rgba(240, 32, 164, 0);
+    }
+
+    .component-container{
+        padding: 4em 2em;
+    }
+
+    /*  Card Grid  */
+    .card-grid-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        min-width: 460px;
+        max-width: 775px;
+        border-radius: 25px;
+    }
+
+    /* Card slider left */
+    .card-slider-left{
+        padding: 0;
+        border-radius: 25px;
+        
+    }
+
+    /* Card slider rigth */
+    .card-slider-rigth{
+        padding: 1em;
+    }
+    
+
+}
