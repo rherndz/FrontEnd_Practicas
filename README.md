@@ -53,13 +53,13 @@ Es una plataforma que ofrece diseños para desarrollar habilidades en desarrollo
 
 - [NFT preview card component](https://rherndz.github.io/FrontEnd_Practicas/nft-preview-card-component-main/) 
 
-- [Recipe page]() 
+- [Recipe page](https://rherndz.github.io/FrontEnd_Practicas/recipe-page-main/) 
 
-- [Social links profile]() 
+- [Social links profile](https://rherndz.github.io/FrontEnd_Practicas/social-links-profile-main/) 
 
-- [Four card feature section]() 
+- [Four card feature section](https://rherndz.github.io/FrontEnd_Practicas/four-card-feature-section-master/) 
 
-- [Social proof section]() 
+- [Social proof section](https://rherndz.github.io/FrontEnd_Practicas/social-proof-section-master/) 
 
 
 ### ##
