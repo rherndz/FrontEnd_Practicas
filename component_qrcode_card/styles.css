@@ -24,12 +24,12 @@ body{
     align-items: center;
     justify-content: space-around;
     height: auto;
-    margin: 40px 0;
-    padding: 50px;
+    margin: 1em 0;
+    padding: 1em;
 }
 .card_item{
     max-width: 310px;
-    height: 490px;
+    height: 30rem;
     margin: 0 3px;
     padding:14px;
     border-radius: 12px;

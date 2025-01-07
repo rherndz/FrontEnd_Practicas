@@ -1,0 +1,152 @@
+:root{
+    --color-whrite-text:hsl(0, 0%, 100%);
+    --color-green-resalt:hsl(75, 94%, 57%);
+
+    --color-grey-links: hsl(0, 0%, 20%);
+    --color-grey-card: hsl(0, 0%, 12%);
+    --color-grey-background: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: var(--color-grey-background);
+}
+
+main {
+    margin: 3em 0;
+}
+
+/* SECTION CARD CONTAINER*/
+.profile-card-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2em 1em;
+}
+
+/* PROFILE CARD */
+.profile-card-content{  
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: var(--color-grey-card);
+    max-width: 350px;
+    min-width: 250px;
+}
+.profile-card-header{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.profile-card-image{
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.profile-card-description{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.profile-card-title{
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+    line-height: 2em;
+    color: var(--color-whrite-text);
+}
+.profile-card-ubication{
+    font-size: 12px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: var(--color-green-resalt);
+}
+.profile-card-text {
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--color-whrite-text);
+}
+
+
+.profile-card-buttons{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    row-gap: 15px;
+    list-style: none;
+    padding: 1em 1em;
+}
+.profile-card-link-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-whrite-text);
+    padding: 14px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-grey-links);
+}
+.profile-card-link-button:hover{
+    color: #000000;
+    background-color: var(--color-green-resalt);
+}
+
+/* SECTION FOOTER*/
+.footer-container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.attribution {
+    font-size: 13px;
+    text-align: center;
+    padding: 5px 0;
+    color: var(--color-whrite-text);
+}
+
+.attribution a {
+    color: var(--color-green-resalt);
+}
+
+/*-- Responsive Desing --*/
+
+/* Mobile */
+@media (max-width:425px){
+
+    /* SECTION CARD CONTAINER*/
+    .profile-card-container{
+        width: 100%;
+        height: fit-content;
+    }
+
+    /* PROFILE CARD */
+    .profile-card-content {
+        max-width: 360px;
+        min-width: 280px;
+    }
+
+    .profile-card-buttons{
+        padding: 0.8em 1em;
+    }
+
+}
+

@@ -1,0 +1,279 @@
+:root{
+    --text-color-subtitle:hsl(234, 12%, 34%);
+    --text-color-text:hsl(229, 6%, 66%);
+    --text-color-background: hsl(0, 0%, 98%);
+
+    --border-color-one:hsl(180, 62%, 55%);
+    --border-color-two:hsl(0, 78%, 62%) ;
+    --border-color-three:hsl(34, 97%, 64%) ;
+    --border-color-four: hsl(212, 86%, 64%);
+
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/*---- Publicity Section ----*/
+.publicity-section{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    row-gap: 20px;
+    padding: 2em 1em;
+}
+
+/*---- Section Header ----*/
+.publicity-section-header{
+    min-width: 250px;
+    text-align: center;
+    padding: 1em 0;
+}
+.publicity-section-title {
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1.8em;
+}
+.publicity-section-subtitle{
+    font-weight: 200;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: var(--text-color-subtitle);
+}
+.publicity-section-text{
+    font-size: 0.9em;
+    text-align:center;
+    line-height: 1.4em;
+    max-width: 340px;
+    margin: 4px auto;
+    color: var(--text-color-subtitle);
+}
+
+
+/*---- Section Cards ----*/
+.publicity-section-cards{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 640px;
+    min-width: 250px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+    margin: 0 auto;
+    padding: 2em 1em;
+}
+.publicity-cardPanel{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    row-gap: 25px;
+    max-width: 420px;
+    min-width: 205px;
+    padding: 1em 1em;
+    border-style: solid;
+    border-radius: 10px;
+    border: 1px solid rgb(211, 211, 211);
+    background-color: var(--text-color-background);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.column-cardpanel {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    row-gap: 25px;
+}
+
+/*-Border Color Panel-*/
+.cardPanel-one {
+    border-top: 4px solid var(--border-color-one);
+}
+.cardPanel-two {
+    border-top: 4px solid var(--border-color-two);
+}
+.cardPanel-three {
+    border-top: 4px solid var(--border-color-three);
+}
+.cardPanel-four{
+    border-top: 4px solid var(--border-color-four);
+}
+
+
+.publ-cardPanel-header {
+    margin: 10px;
+}
+.publ-cardPanel-title{
+    font-weight: bolder;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 2.5em;
+}
+.publ-cardPanel-text {
+    color: var(--text-color-subtitle);
+}
+
+
+.publicity-cardPanel figure {
+    margin: 10px 0;
+    text-align: right;
+}
+.publ-cardPanel-icon{
+    width: 55px;
+}
+
+
+/*---- SECTION FOOTER ----*/
+.footer-container{
+    width: 100%;
+    height: 4em;
+    padding: 25px;
+    top: 0; left: 0;
+    text-align: center;
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+/*---- SECTION RESPONSIVE DESING ----*/
+
+/* Tablet  */
+@media (min-width:626px) {
+    
+    /*---- Publicity Section ----*/
+    .publicity-section{
+        row-gap: 20px;
+        padding: 1em 2em;
+    }
+
+    .publicity-section-header {
+        margin: 2em; 
+        padding: 2em 0;
+    }
+    
+    .publicity-section-subtitle {
+        font-size: 19px;
+    }
+    
+    .publicity-section-title {
+        font-size: 24px;
+        line-height: 1.8em;
+    }
+    
+    .publicity-section-text {
+        font-size: 15px;
+    }
+
+
+    /*---- Section Cards ----*/
+    .publicity-section-cards{
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 2em 1em;
+    }
+
+    .publicity-cardPanel{
+        min-width: 375px;
+        background-color: rgba(255, 255, 0, 0)
+    }
+
+}
+
+/* Laptop */
+@media (min-width:1024px) {
+    
+    /*---- Publicity Section ----*/
+    .publicity-section{
+        row-gap: 20px;
+        padding: 1em 2em;
+    }
+
+    /*---- Section Header ----*/
+    .publicity-section-header{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    /*---- Section Cards ----*/
+    .publicity-section-cards{
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 25px;
+
+        margin: 0 auto;
+    }
+
+    .column-cardpanel{
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        row-gap: 25px;
+    }
+
+    
+}
+
+/* Desktop */
+@media (min-width:1440px) {
+   
+    /*---- Publicity Section ----*/
+    .publicity-section{
+        row-gap: 2em;
+        padding: 1.5em 2em;
+    }
+    .publicity-section-header{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .publicity-section-title {
+        font-size: 1.8em;
+    }
+
+    .publicity-section-subtitle {
+        font-size: 1.6em;
+    }
+
+    .publicity-section-text {
+        font-size: 1em;
+        max-width: 480px;
+    }
+
+
+    /*---- Section Cards ----*/
+    .publicity-section-cards{
+        max-width: 1300px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .column-cardpanel{
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .cardPanel-one {
+        align-self: center;
+    }
+    .cardPanel-two {
+        align-self:flex-start;
+    }
+    .cardPanel-three {
+        align-self: flex-end;
+    }
+    .cardPanel-four{
+        align-self: center;
+    }
+}
+

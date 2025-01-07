@@ -1,0 +1,329 @@
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    font-family: "League Spartan", serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--White);
+}
+main{
+    min-width: 200px;
+    width: 100%;
+    height: 100%;
+}
+
+/* -- socialproof  -- */
+.socialproof-container{
+    width: 100%;
+    max-width: 520px;
+    min-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2em 1em;
+}
+.socialproof-panel{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+/* -- Header -- */
+.panel-header {
+    width: 100%;
+    height: auto;
+}
+.socialproof-headerpanel{
+    margin: 0 auto;
+    text-align: center;
+}
+.socialproof-headerpanel-title{
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);   
+}
+.socialproof-headerpanel-txt{
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.5em;
+    max-width: 390px;
+    margin: 1em auto;
+    color: var(--Dark-Grayish-Magenta);
+}
+
+.headerpanel-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 15px;
+    margin: 1em 0;
+}
+.socialproof-valuereview{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 1em;
+    background-color: var(--Light-Grayish-Magenta);
+}
+.socialproof-valuereview figure{
+    margin: 10px;
+}
+.icon-value-star{
+    margin: 0 3px;
+}
+.socialproof-valuereview h2{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+}
+
+/* -- Body -- */
+.panel-body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.socialproof-cardpersonal{
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: var(--Very-Dark-Magenta);
+}
+.socialproof-cardpersonal-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+}
+.socialproof-cardpersonal-image{
+    width: 70%;
+    border-radius: 55px;
+}
+.socialproof-cardpersonal-headertxt h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: var(--White);
+    
+}
+.socialproof-cardpersonal-headertxt span{
+    font-size: 1.1em;
+    color: var(--Soft-Pink);
+}
+.socialproof-cardpersonal-txt{
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    
+    color: var(--White);
+
+}
+
+footer{
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+
+/* -- Responsive Desing -- */
+
+/* Tablet */
+@media (min-width:626px) {
+    .socialproof-container{
+        max-width: 550px;
+    }
+
+    /* -- Header -- */
+    .panel-header {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .socialproof-headerpanel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .socialproof-headerpanel-title{
+        font-size: 2em;
+    }
+    .socialproof-headerpanel-txt{
+        font-size: 1em;
+    }
+
+    /* -- Body -- */
+    .panel-body{
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .socialproof-cardpersonal{
+        max-width: 400px;
+        flex-direction: column;
+        column-gap: 15px;
+        padding: 2em;
+    }
+}
+
+/*Lapto*/
+@media (min-width:1024px){
+    main{
+        padding: 1em;
+    }
+    .socialproof-container{
+        max-width: 1150px;
+        padding: 1em;
+        row-gap: 1em;
+    }
+
+    /* -- Header -- */
+    .panel-header {
+        display: flex;
+        flex-direction: row;
+        align-items: normal;
+        justify-content: space-evenly;
+    }
+    .headerpanel-title{
+        width: 30%;
+        padding-top: 20px;
+        text-align: left;
+    }
+    .socialproof-headerpanel-title{
+        font-size: 2.3em;
+    }
+
+
+    .headerpanel-cards{
+        width: 53%;
+        row-gap: 10px;
+        margin: 0 auto;
+    }
+    .valuereview-start{
+        align-self: flex-start;
+    }
+    .valuereview-center{
+        align-self: center;
+    }
+    .valuereview-end{
+        align-self: flex-end;
+    }
+
+    .socialproof-valuereview{
+        max-width: 420px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+
+    }
+    .icon-value-star{
+        width: 10%;
+    }
+
+    /* -- Body -- */
+    .panel-body{
+        height: 19em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .socialproof-cardpersonal{
+        max-width: 320px;
+        padding: 1.6em;
+    }
+    .socialproof-cardpersonal-headertxt h3 {
+        font-size: 1em;
+    }
+    .socialproof-cardpersonal-headertxt span{
+        font-size: 1em;
+    }
+
+    .socialproof-cardpersonal-txt{
+        font-size: 0.8em;
+
+    }
+
+    .cardpesonal-top{
+        align-self: flex-start;
+    }
+    .cardpesonal-center{
+        align-self: center;
+    }
+    .cardpesonal-bottom{
+        align-self: flex-end;
+    }
+}
+
+/* Desktop */
+@media (min-width:1440px) {
+
+    main{
+        padding: 3em 0;
+    }
+
+    .socialproof-container{
+        max-width: 1250px;
+        row-gap: 2em;
+    }
+    .socialproof-panel{
+        display: flex;
+        padding: 1em 0;
+    }
+
+    /* -- Header -- */
+    .panel-header {
+        width: 100%;
+        height: auto;
+    }
+
+    /* -- Body -- */
+    .panel-body{
+        column-gap: 0;
+        height: 22em;
+    }
+    .socialproof-cardpersonal{
+        max-width: 340px;
+        height: 16em;
+        padding: 2em;
+    }
+    .socialproof-cardpersonal-headertxt h3 {
+        font-size: 1em;
+    }
+    .socialproof-cardpersonal-headertxt span{
+        font-size: 1em;
+    }
+
+}

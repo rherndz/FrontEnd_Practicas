@@ -4,19 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Frontend Mentor | Four card feature section</title>
 </head>
 <body>
     <main>
-        <section>
+        <section class="publicity-section">
+            <div class="publicity-section-header">
+                <span class="publicity-section-subtitle">Reliable, efficient delivery</span>
+                <h2 class="publicity-section-title">Powered by Tecnhology</h2>
+                <p class="publicity-section-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla provident consectetur perferendis necessitatibus at.</p>
+            </div>
 
+            <div class="publicity-section-cards">
+
+                <div class="publicity-cardPanel cardPanel-one">
+                    <header class="publ-cardPanel-header">
+                        <h3 class="publ-cardPanel-title">Supervisor</h3>
+
+                        <p class="publ-cardPanel-text">Monitors activity to identify project roadblocks</p>
+                        
+                    </header>
+
+                    <figure>
+                        <img src="images/icon-supervisor.svg" alt="icon magnifying glass" class="publ-gridPanel-icon">
+                    </figure>
+                </div>
+                
+                <div class="column-cardpanel">
+                    <div class="publicity-cardPanel cardPanel-two">
+                        <header class="publ-cardPanel-header">
+                            <h3 class="publ-cardPanel-title">Team Builder</h3>
+                    
+                            <p class="publ-cardPanel-text">Scan our tablet network to create the optimal team for your project</p>
+                        </header>
+                    
+                        <figure>
+                            <img src="images/icon-team-builder.svg" alt="icon Builder" class="publ-gridPanel-icon">
+                        </figure>
+                    </div>
+                    
+                    <div class="publicity-cardPanel cardPanel-three">
+                        <header class="publ-cardPanel-header">
+                            <h3 class="publ-cardPanel-title">Kama</h3>
+                            <p class="publ-cardPanel-text">Regularly evaluates our talent to ensure quality</p>
+                        </header>
+                    
+                        <figure>
+                            <img src="images/icon-karma.svg" alt="icon ligth buld" class="publ-gridPanel-icon">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="publicity-cardPanel cardPanel-four">
+                    <header class="publ-cardPanel-header">
+                        <h3 class="publ-cardPanel-title">Calculator</h3>
+                        <p class="publ-cardPanel-text">Use data from past projects to provide better delivery estimates</p>
+                    </header>
+                
+                    <figure>
+                        <img src="images/icon-calculator.svg" alt="icon calculator" class="publ-gridPanel-icon">
+                    </figure>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer-container">
         <p class="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="#">Your Name Here</a>.
+          Coded by <a href="https://github.com/rherndz">RHrndz</a>.
         </p>
     </footer>
 </body>
