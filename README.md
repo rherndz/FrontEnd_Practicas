@@ -31,35 +31,35 @@ Es una plataforma que ofrece diseños para desarrollar habilidades en desarrollo
 
 ## 🔶 **Practicas** ##
 
-- [QR code component](https://rherndz.github.io/FrontEnd_Practicas/component_qrcode_card/) 
+- [QR code component](https://rherndz.github.io/frontend_mentor_newbiep/component_qrcode_card) 
 
-- [3-column preview card component](https://rherndz.github.io/FrontEnd_Practicas/component_3column_cards/) 
+- [3-column preview card component](https://rherndz.github.io/frontend_mentor_newbiep/component_3column_cards/) 
 
-- [Huddle landing page with a single introductory section](https://rherndz.github.io/FrontEnd_Practicas/introductory_landing_page/) 
+- [Huddle landing page with a single introductory section](https://rherndz.github.io/frontend_mentor_newbiep/introductory_landing_page/) 
 
-- [Stats preview card component](https://rherndz.github.io/FrontEnd_Practicas/stats_preview_card_component/) 
+- [Stats preview card component](https://rherndz.github.io/frontend_mentor_newbiep/stats_preview_card_component/) 
 
-- [Profile card component](https://rherndz.github.io/FrontEnd_Practicas/profile-card-component-main/) 
+- [Profile card component](https://rherndz.github.io/frontend_mentor_newbiep/profile-card-component-main/) 
 
-- [Blog preview card](https://rherndz.github.io/FrontEnd_Practicas/blog-preview-card-main/) 
+- [Blog preview card](https://rherndz.github.io/frontend_mentor_newbiep/blog-preview-card-main/) 
 
-- [Product preview card](https://rherndz.github.io/FrontEnd_Practicas/product_preview_card_component/) 
+- [Product preview card](https://rherndz.github.io/frontend_mentor_newbiep/product_preview_card_component/) 
 
-- [Order summary component](https://rherndz.github.io/FrontEnd_Practicas/order-summary-component-main/) 
+- [Order summary component](https://rherndz.github.io/frontend_mentor_newbiep/order-summary-component-main/) 
 
-- [Single price grid component](https://rherndz.github.io/FrontEnd_Practicas/single-price-grid-component-master/) 
+- [Single price grid component](https://rherndz.github.io/frontend_mentor_newbiep/single-price-grid-component-master/) 
 
-- [Results summary component](https://rherndz.github.io/FrontEnd_Practicas/results-summary-component-main/) 
+- [Results summary component](https://rherndz.github.io/frontend_mentor_newbiep/results-summary-component-main/) 
 
-- [NFT preview card component](https://rherndz.github.io/FrontEnd_Practicas/nft-preview-card-component-main/) 
+- [NFT preview card component](https://rherndz.github.io/frontend_mentor_newbiep/nft-preview-card-component-main/) 
 
-- [Recipe page](https://rherndz.github.io/FrontEnd_Practicas/recipe-page-main/) 
+- [Recipe page](https://rherndz.github.io/frontend_mentor_newbiep/recipe-page-main/) 
 
-- [Social links profile](https://rherndz.github.io/FrontEnd_Practicas/social-links-profile-main/) 
+- [Social links profile](https://rherndz.github.io/frontend_mentor_newbiep/social-links-profile-main/) 
 
-- [Four card feature section](https://rherndz.github.io/FrontEnd_Practicas/four-card-feature-section-master/) 
+- [Four card feature section](https://rherndz.github.io/frontend_mentor_newbiep/four-card-feature-section-master/) 
 
-- [Social proof section](https://rherndz.github.io/FrontEnd_Practicas/social-proof-section-master/) 
+- [Social proof section](https://rherndz.github.io/frontend_mentor_newbiep/social-proof-section-master/) 
 
 
 ### ##
